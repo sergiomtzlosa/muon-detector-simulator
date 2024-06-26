@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		030CDAD0A8CE3AC0C1DA28C7 /* MDSGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBE1B38C17483B9E818BACF /* MDSGeometry.m */; };
+		03D71CA33CFFF18F82168BD3 /* MDSGeometryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8836DAE8480CF5F915A322E5 /* MDSGeometryTests.m */; };
+		0E9B9905E331EB916FA1E52A /* MDSLogEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E4063B53CABB1BFA608DB2 /* MDSLogEntry.m */; };
+		235843F3902182A4A28BCCDC /* MDSMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF85F5D1EE05D82252A661A /* MDSMainWindowController.m */; };
+		23FA2D81ACE72E8641851B76 /* MDSLogEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E4063B53CABB1BFA608DB2 /* MDSLogEntry.m */; };
+		272C3EFA39528750636B614C /* MDSHit.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEEBF4634C44B67792FB95A /* MDSHit.m */; };
+		275026C6197AD04D6E6BCF11 /* MDSTimelineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C848BF833AFCC087F6B1F3 /* MDSTimelineView.m */; };
+		3A3DFCD8C09B115974738E8D /* MDSRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E4F1000A6AB8F7302C799 /* MDSRandom.m */; };
+		410E087B829D963BCAD4C3F6 /* MDSCoincidence.m in Sources */ = {isa = PBXBuildFile; fileRef = E08EE007176F4B887F178E64 /* MDSCoincidence.m */; };
+		495E3EA87EC63C5895EAE405 /* MDSResultsExporterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E673C9678FCAC72A47EBE82D /* MDSResultsExporterTests.m */; };
+		4C27874508201C59D1A84E99 /* MDSResultsExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EECDBCD150C0C878A3EFDFA /* MDSResultsExporter.m */; };
+		4EE4707C1C5BFD8F88FA8222 /* MDSCoincidence.m in Sources */ = {isa = PBXBuildFile; fileRef = E08EE007176F4B887F178E64 /* MDSCoincidence.m */; };
+		5C26567E766BFEB624A74525 /* MDSSimulationEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C36CFB2AB7E81DDCDAA75B5D /* MDSSimulationEngineTests.m */; };
+		5E731F4071C78E4A1AFC063C /* MDSSimulationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 569AAE1DCA426EEFAA41E413 /* MDSSimulationEngine.m */; };
+		5FEBB48C81E968EDAD37D72A /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = CA9A08489274A5D61C5960EA /* AppIcon.icns */; };
+		64DCE90410979B64EB3E34D6 /* MDSBatch.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6BC9EC2E2413A95198010D /* MDSBatch.m */; };
+		69690778B1F0FF2AC1CD6A9E /* MDSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDE7E41CEE69E22ABF9B572 /* MDSAppDelegate.m */; };
+		6B1F59C25CA5B9614D25CDE6 /* MDSTube.m in Sources */ = {isa = PBXBuildFile; fileRef = D516141343DD3404E958E621 /* MDSTube.m */; };
+		6D0EEDFEEC810F7ACECD9CFF /* MDSGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBE1B38C17483B9E818BACF /* MDSGeometry.m */; };
+		76F6DAC50B2000AED3D33D0D /* MDSDetectorConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FC204681644672CA744373F9 /* MDSDetectorConfiguration.m */; };
+		87A8253E7939ADB7B4807C08 /* MDSTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A606547CBACC1E9CAEC84 /* MDSTrack.m */; };
+		8817ED9C33C465D0CD04FE51 /* MDSResultsExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EECDBCD150C0C878A3EFDFA /* MDSResultsExporter.m */; };
+		A123F009C2B03FD338C76F77 /* MDSRandomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 671B62C9B6BD9E3BD4919AB7 /* MDSRandomTests.m */; };
+		A36390C7624E5DE5F5742A4C /* MDSHit.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEEBF4634C44B67792FB95A /* MDSHit.m */; };
+		ABA1E77989C8D9D1AD123791 /* MDSDetectorSceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C6CFFE40EA41C29308B2CB /* MDSDetectorSceneController.m */; };
+		B0F5E665FABD4778E4F8A452 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D93BEE982E370BBAA2F0E639 /* main.m */; };
+		B4208B93C5AA12AC20A17C8C /* MDSConfigurationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B23B880B61FBE5FEA31A73 /* MDSConfigurationTests.m */; };
+		B5814A0B8A1AF2FE1C06D2CF /* MDSSimulationEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB34B9C702AEA1D295CF4D2 /* MDSSimulationEvent.m */; };
+		B5CCEF6F372008B3510AC7BA /* MDSConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FEC31AC0B48A230088D394 /* MDSConfigurationViewController.m */; };
+		C22BEF1137AAC18728CB4457 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5315AA40BA9764229CEAB45 /* XCTest.framework */; };
+		C9A912AD64B41538FE33AFBA /* MDSTube.m in Sources */ = {isa = PBXBuildFile; fileRef = D516141343DD3404E958E621 /* MDSTube.m */; };
+		C9DF76B16DA59C7A3571EC33 /* MDSSimulationEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB34B9C702AEA1D295CF4D2 /* MDSSimulationEvent.m */; };
+		CE52A458E104081E88A4F222 /* MDSTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A606547CBACC1E9CAEC84 /* MDSTrack.m */; };
+		CE8877CCE1EFB39592FBBA38 /* MDSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1E4E5AD5CDD911222F8511 /* MDSMainViewController.m */; };
+		D92F331404408BDA39E9F5B8 /* MDSDetectorConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FC204681644672CA744373F9 /* MDSDetectorConfiguration.m */; };
+		DEE23B6005FA209C52AF6C24 /* MDSRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E4F1000A6AB8F7302C799 /* MDSRandom.m */; };
+		E0151414A92F0B54C144366D /* MDSSimulationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 569AAE1DCA426EEFAA41E413 /* MDSSimulationEngine.m */; };
+		E6D73468A605965F4EEAF147 /* MDSBatch.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6BC9EC2E2413A95198010D /* MDSBatch.m */; };
+		FAEF04E8BB4C0178D2954500 /* MDSHowItWorksWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = A04A41B2A5E9B7DCFBBA6925 /* MDSHowItWorksWindowController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0AB34B9C702AEA1D295CF4D2 /* MDSSimulationEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSSimulationEvent.m; sourceTree = "<group>"; };
+		0EF220DD161F64036AE69F97 /* MDSSimulationEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSSimulationEvent.h; sourceTree = "<group>"; };
+		139C14E326892BE042C6E5ED /* MDSLogEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSLogEntry.h; sourceTree = "<group>"; };
+		2B56C52B6979E0C0A77BBC72 /* MDSCoincidence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSCoincidence.h; sourceTree = "<group>"; };
+		459D84821E9B38103707E5B2 /* MDSDetectorSceneController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSDetectorSceneController.h; sourceTree = "<group>"; };
+		569AAE1DCA426EEFAA41E413 /* MDSSimulationEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSSimulationEngine.m; sourceTree = "<group>"; };
+		59E4063B53CABB1BFA608DB2 /* MDSLogEntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSLogEntry.m; sourceTree = "<group>"; };
+		671B62C9B6BD9E3BD4919AB7 /* MDSRandomTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSRandomTests.m; sourceTree = "<group>"; };
+		67DA10412F1FBEC000C7AF29 /* MuonDetectorSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuonDetectorSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68C848BF833AFCC087F6B1F3 /* MDSTimelineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSTimelineView.m; sourceTree = "<group>"; };
+		77C6CFFE40EA41C29308B2CB /* MDSDetectorSceneController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSDetectorSceneController.m; sourceTree = "<group>"; };
+		7CBE1B38C17483B9E818BACF /* MDSGeometry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSGeometry.m; sourceTree = "<group>"; };
+		7EECDBCD150C0C878A3EFDFA /* MDSResultsExporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSResultsExporter.m; sourceTree = "<group>"; };
+		8836DAE8480CF5F915A322E5 /* MDSGeometryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSGeometryTests.m; sourceTree = "<group>"; };
+		8C2A1878F7C69DE7858B23A8 /* MDSTrack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSTrack.h; sourceTree = "<group>"; };
+		905279589DFF6B254D9314D4 /* MDSGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSGeometry.h; sourceTree = "<group>"; };
+		91A0466C15AD64AA024F4613 /* MDSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSAppDelegate.h; sourceTree = "<group>"; };
+		91B23B880B61FBE5FEA31A73 /* MDSConfigurationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSConfigurationTests.m; sourceTree = "<group>"; };
+		94979961A75294750A11E8F6 /* MDSHit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSHit.h; sourceTree = "<group>"; };
+		9D7E4F1000A6AB8F7302C799 /* MDSRandom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSRandom.m; sourceTree = "<group>"; };
+		A04A41B2A5E9B7DCFBBA6925 /* MDSHowItWorksWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSHowItWorksWindowController.m; sourceTree = "<group>"; };
+		A0776CDD17AECFEA0D6EB884 /* MDSTube.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSTube.h; sourceTree = "<group>"; };
+		AFCD5F44AC3E52E00510B8C2 /* MDSMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSMainViewController.h; sourceTree = "<group>"; };
+		B8C5AEF5E6BEF39245178133 /* MDSConfigurationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSConfigurationViewController.h; sourceTree = "<group>"; };
+		BA0DA9F872566A5C78C06730 /* MDSResultsExporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSResultsExporter.h; sourceTree = "<group>"; };
+		BBF85F5D1EE05D82252A661A /* MDSMainWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSMainWindowController.m; sourceTree = "<group>"; };
+		BC92A3F02C9F8D080D873328 /* MDSTimelineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSTimelineView.h; sourceTree = "<group>"; };
+		BDDE7E41CEE69E22ABF9B572 /* MDSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSAppDelegate.m; sourceTree = "<group>"; };
+		C211E87686012958C6377B20 /* MDSDetectorConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSDetectorConfiguration.h; sourceTree = "<group>"; };
+		C36CFB2AB7E81DDCDAA75B5D /* MDSSimulationEngineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSSimulationEngineTests.m; sourceTree = "<group>"; };
+		C5315AA40BA9764229CEAB45 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = System/Library/Frameworks/XCTest.framework; sourceTree = SDKROOT; };
+		C5D21DF14552783E6CF8C832 /* MDSHowItWorksWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSHowItWorksWindowController.h; sourceTree = "<group>"; };
+		C68D6058637C7A221FAF73E3 /* MDSMainWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSMainWindowController.h; sourceTree = "<group>"; };
+		C92F58CE281D3BB5F443AE3D /* MDSSimulationEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSSimulationEngine.h; sourceTree = "<group>"; };
+		CA9A08489274A5D61C5960EA /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		D13811FFF31A3B5CA554E079 /* MDSBatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSBatch.h; sourceTree = "<group>"; };
+		D516141343DD3404E958E621 /* MDSTube.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSTube.m; sourceTree = "<group>"; };
+		D66A606547CBACC1E9CAEC84 /* MDSTrack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSTrack.m; sourceTree = "<group>"; };
+		D93BEE982E370BBAA2F0E639 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E08EE007176F4B887F178E64 /* MDSCoincidence.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSCoincidence.m; sourceTree = "<group>"; };
+		E651D4B911D27642080F33C1 /* MuonDetectorSimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuonDetectorSimulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E673C9678FCAC72A47EBE82D /* MDSResultsExporterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSResultsExporterTests.m; sourceTree = "<group>"; };
+		EAEEBF4634C44B67792FB95A /* MDSHit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSHit.m; sourceTree = "<group>"; };
+		EE6BC9EC2E2413A95198010D /* MDSBatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSBatch.m; sourceTree = "<group>"; };
+		F2FEC31AC0B48A230088D394 /* MDSConfigurationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSConfigurationViewController.m; sourceTree = "<group>"; };
+		F6DFC9EBAC353B5F86010F45 /* MDSRandom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSRandom.h; sourceTree = "<group>"; };
+		FC1E4E5AD5CDD911222F8511 /* MDSMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSMainViewController.m; sourceTree = "<group>"; };
+		FC204681644672CA744373F9 /* MDSDetectorConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSDetectorConfiguration.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		944282C5A6A6BC2FAD5EB891 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C22BEF1137AAC18728CB4457 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11447CA69BD4AEAA04A82BBF /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				459D84821E9B38103707E5B2 /* MDSDetectorSceneController.h */,
+				77C6CFFE40EA41C29308B2CB /* MDSDetectorSceneController.m */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		279849CC24DF3F789D6A5552 /* MuonDetectorSimulator */ = {
+			isa = PBXGroup;
+			children = (
+				B58A9E404CDAC3A2F36224C9 /* App */,
+				883E0C3F116572EED042EECD /* Models */,
+				BC88A9B2E58972E05A9DD8CB /* Resources */,
+				11447CA69BD4AEAA04A82BBF /* Scene */,
+				2A0ACF0F88AAC78890392B53 /* Simulation */,
+				FF0BF995AC639BDB04BD9179 /* UI */,
+			);
+			path = MuonDetectorSimulator;
+			sourceTree = "<group>";
+		};
+		2A0ACF0F88AAC78890392B53 /* Simulation */ = {
+			isa = PBXGroup;
+			children = (
+				F6DFC9EBAC353B5F86010F45 /* MDSRandom.h */,
+				9D7E4F1000A6AB8F7302C799 /* MDSRandom.m */,
+				C92F58CE281D3BB5F443AE3D /* MDSSimulationEngine.h */,
+				569AAE1DCA426EEFAA41E413 /* MDSSimulationEngine.m */,
+			);
+			path = Simulation;
+			sourceTree = "<group>";
+		};
+		40587173C9D41895DBA98D16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5315AA40BA9764229CEAB45 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B7F274F15298696E1F83C10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67DA10412F1FBEC000C7AF29 /* MuonDetectorSimulator.app */,
+				E651D4B911D27642080F33C1 /* MuonDetectorSimulatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54C37BCDCE6A9101FAF8508E /* MuonDetectorSimulatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				91B23B880B61FBE5FEA31A73 /* MDSConfigurationTests.m */,
+				8836DAE8480CF5F915A322E5 /* MDSGeometryTests.m */,
+				671B62C9B6BD9E3BD4919AB7 /* MDSRandomTests.m */,
+				E673C9678FCAC72A47EBE82D /* MDSResultsExporterTests.m */,
+				C36CFB2AB7E81DDCDAA75B5D /* MDSSimulationEngineTests.m */,
+			);
+			path = MuonDetectorSimulatorTests;
+			sourceTree = "<group>";
+		};
+		883E0C3F116572EED042EECD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D13811FFF31A3B5CA554E079 /* MDSBatch.h */,
+				EE6BC9EC2E2413A95198010D /* MDSBatch.m */,
+				2B56C52B6979E0C0A77BBC72 /* MDSCoincidence.h */,
+				E08EE007176F4B887F178E64 /* MDSCoincidence.m */,
+				C211E87686012958C6377B20 /* MDSDetectorConfiguration.h */,
+				FC204681644672CA744373F9 /* MDSDetectorConfiguration.m */,
+				905279589DFF6B254D9314D4 /* MDSGeometry.h */,
+				7CBE1B38C17483B9E818BACF /* MDSGeometry.m */,
+				94979961A75294750A11E8F6 /* MDSHit.h */,
+				EAEEBF4634C44B67792FB95A /* MDSHit.m */,
+				BA0DA9F872566A5C78C06730 /* MDSResultsExporter.h */,
+				7EECDBCD150C0C878A3EFDFA /* MDSResultsExporter.m */,
+				0EF220DD161F64036AE69F97 /* MDSSimulationEvent.h */,
+				0AB34B9C702AEA1D295CF4D2 /* MDSSimulationEvent.m */,
+				8C2A1878F7C69DE7858B23A8 /* MDSTrack.h */,
+				D66A606547CBACC1E9CAEC84 /* MDSTrack.m */,
+				A0776CDD17AECFEA0D6EB884 /* MDSTube.h */,
+				D516141343DD3404E958E621 /* MDSTube.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B58A9E404CDAC3A2F36224C9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D93BEE982E370BBAA2F0E639 /* main.m */,
+				91A0466C15AD64AA024F4613 /* MDSAppDelegate.h */,
+				BDDE7E41CEE69E22ABF9B572 /* MDSAppDelegate.m */,
+				C68D6058637C7A221FAF73E3 /* MDSMainWindowController.h */,
+				BBF85F5D1EE05D82252A661A /* MDSMainWindowController.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BC88A9B2E58972E05A9DD8CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA9A08489274A5D61C5960EA /* AppIcon.icns */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E5757E24D959AE062D7FED00 = {
+			isa = PBXGroup;
+			children = (
+				279849CC24DF3F789D6A5552 /* MuonDetectorSimulator */,
+				54C37BCDCE6A9101FAF8508E /* MuonDetectorSimulatorTests */,
+				40587173C9D41895DBA98D16 /* Frameworks */,
+				4B7F274F15298696E1F83C10 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF0BF995AC639BDB04BD9179 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B8C5AEF5E6BEF39245178133 /* MDSConfigurationViewController.h */,
+				F2FEC31AC0B48A230088D394 /* MDSConfigurationViewController.m */,
+				C5D21DF14552783E6CF8C832 /* MDSHowItWorksWindowController.h */,
+				A04A41B2A5E9B7DCFBBA6925 /* MDSHowItWorksWindowController.m */,
+				139C14E326892BE042C6E5ED /* MDSLogEntry.h */,
+				59E4063B53CABB1BFA608DB2 /* MDSLogEntry.m */,
+				AFCD5F44AC3E52E00510B8C2 /* MDSMainViewController.h */,
+				FC1E4E5AD5CDD911222F8511 /* MDSMainViewController.m */,
+				BC92A3F02C9F8D080D873328 /* MDSTimelineView.h */,
+				68C848BF833AFCC087F6B1F3 /* MDSTimelineView.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8E5810FB09D2CAA4D6CDF1C /* MuonDetectorSimulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55124D9F133487E47B05E196 /* Build configuration list for PBXNativeTarget "MuonDetectorSimulator" */;
+			buildPhases = (
+				69FFD75D2B4540D3F7B10833 /* Sources */,
+				A208D129D97479C5AE52F051 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MuonDetectorSimulator;
+			packageProductDependencies = (
+			);
+			productName = MuonDetectorSimulator;
+			productReference = 67DA10412F1FBEC000C7AF29 /* MuonDetectorSimulator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6A6DC3479257F791A65CCD8 /* MuonDetectorSimulatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 421BDF8108CD113454D6FAA0 /* Build configuration list for PBXNativeTarget "MuonDetectorSimulatorTests" */;
+			buildPhases = (
+				D8948AE38EA79DB362A5C699 /* Sources */,
+				944282C5A6A6BC2FAD5EB891 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MuonDetectorSimulatorTests;
+			packageProductDependencies = (
+			);
+			productName = MuonDetectorSimulatorTests;
+			productReference = E651D4B911D27642080F33C1 /* MuonDetectorSimulatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C10535A9780901974362B77C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = CBFE5646E342E81A31AD9DC1 /* Build configuration list for PBXProject "MuonDetectorSimulator" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = E5757E24D959AE062D7FED00;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4B7F274F15298696E1F83C10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8E5810FB09D2CAA4D6CDF1C /* MuonDetectorSimulator */,
+				F6A6DC3479257F791A65CCD8 /* MuonDetectorSimulatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A208D129D97479C5AE52F051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FEBB48C81E968EDAD37D72A /* AppIcon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69FFD75D2B4540D3F7B10833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69690778B1F0FF2AC1CD6A9E /* MDSAppDelegate.m in Sources */,
+				E6D73468A605965F4EEAF147 /* MDSBatch.m in Sources */,
+				4EE4707C1C5BFD8F88FA8222 /* MDSCoincidence.m in Sources */,
+				B5CCEF6F372008B3510AC7BA /* MDSConfigurationViewController.m in Sources */,
+				D92F331404408BDA39E9F5B8 /* MDSDetectorConfiguration.m in Sources */,
+				ABA1E77989C8D9D1AD123791 /* MDSDetectorSceneController.m in Sources */,
+				030CDAD0A8CE3AC0C1DA28C7 /* MDSGeometry.m in Sources */,
+				272C3EFA39528750636B614C /* MDSHit.m in Sources */,
+				FAEF04E8BB4C0178D2954500 /* MDSHowItWorksWindowController.m in Sources */,
+				23FA2D81ACE72E8641851B76 /* MDSLogEntry.m in Sources */,
+				CE8877CCE1EFB39592FBBA38 /* MDSMainViewController.m in Sources */,
+				235843F3902182A4A28BCCDC /* MDSMainWindowController.m in Sources */,
+				DEE23B6005FA209C52AF6C24 /* MDSRandom.m in Sources */,
+				8817ED9C33C465D0CD04FE51 /* MDSResultsExporter.m in Sources */,
+				E0151414A92F0B54C144366D /* MDSSimulationEngine.m in Sources */,
+				B5814A0B8A1AF2FE1C06D2CF /* MDSSimulationEvent.m in Sources */,
+				275026C6197AD04D6E6BCF11 /* MDSTimelineView.m in Sources */,
+				87A8253E7939ADB7B4807C08 /* MDSTrack.m in Sources */,
+				C9A912AD64B41538FE33AFBA /* MDSTube.m in Sources */,
+				B0F5E665FABD4778E4F8A452 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8948AE38EA79DB362A5C699 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64DCE90410979B64EB3E34D6 /* MDSBatch.m in Sources */,
+				410E087B829D963BCAD4C3F6 /* MDSCoincidence.m in Sources */,
+				B4208B93C5AA12AC20A17C8C /* MDSConfigurationTests.m in Sources */,
+				76F6DAC50B2000AED3D33D0D /* MDSDetectorConfiguration.m in Sources */,
+				6D0EEDFEEC810F7ACECD9CFF /* MDSGeometry.m in Sources */,
+				03D71CA33CFFF18F82168BD3 /* MDSGeometryTests.m in Sources */,
+				A36390C7624E5DE5F5742A4C /* MDSHit.m in Sources */,
+				0E9B9905E331EB916FA1E52A /* MDSLogEntry.m in Sources */,
+				3A3DFCD8C09B115974738E8D /* MDSRandom.m in Sources */,
+				A123F009C2B03FD338C76F77 /* MDSRandomTests.m in Sources */,
+				4C27874508201C59D1A84E99 /* MDSResultsExporter.m in Sources */,
+				495E3EA87EC63C5895EAE405 /* MDSResultsExporterTests.m in Sources */,
+				5E731F4071C78E4A1AFC063C /* MDSSimulationEngine.m in Sources */,
+				5C26567E766BFEB624A74525 /* MDSSimulationEngineTests.m in Sources */,
+				C9DF76B16DA59C7A3571EC33 /* MDSSimulationEvent.m in Sources */,
+				CE52A458E104081E88A4F222 /* MDSTrack.m in Sources */,
+				6B1F59C25CA5B9614D25CDE6 /* MDSTube.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4970F6C6DCACE96F33559D8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7847E8A34C0DBCAB0E1E1E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/MuonDetectorSimulator/Models",
+					"$(SRCROOT)/MuonDetectorSimulator/Simulation",
+					"$(SRCROOT)/MuonDetectorSimulator/UI",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MuonDetectorSimulatorTests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A77BBCF46DC991117905F8CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = MuonDetectorSimulator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MuonDetectorSimulator;
+				PRODUCT_NAME = "Muon Detector Simulator";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C90D2E85A5761DC858A6000E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F12827E206F76B5728326D75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = MuonDetectorSimulator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MuonDetectorSimulator;
+				PRODUCT_NAME = "Muon Detector Simulator";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F3FCE16FBB97E3EDD63D6BC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/MuonDetectorSimulator/Models",
+					"$(SRCROOT)/MuonDetectorSimulator/Simulation",
+					"$(SRCROOT)/MuonDetectorSimulator/UI",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MuonDetectorSimulatorTests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		421BDF8108CD113454D6FAA0 /* Build configuration list for PBXNativeTarget "MuonDetectorSimulatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7847E8A34C0DBCAB0E1E1E39 /* Debug */,
+				F3FCE16FBB97E3EDD63D6BC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		55124D9F133487E47B05E196 /* Build configuration list for PBXNativeTarget "MuonDetectorSimulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F12827E206F76B5728326D75 /* Debug */,
+				A77BBCF46DC991117905F8CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CBFE5646E342E81A31AD9DC1 /* Build configuration list for PBXProject "MuonDetectorSimulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4970F6C6DCACE96F33559D8F /* Debug */,
+				C90D2E85A5761DC858A6000E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C10535A9780901974362B77C /* Project object */;
+}
