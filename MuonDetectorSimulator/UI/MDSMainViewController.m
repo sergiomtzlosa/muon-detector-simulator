@@ -2040,4 +2040,4 @@ static NSImage *MDSCaptureViewImage(NSView *view) {
 #endif
 
 @end
-​​​​​​​​​
+​​​​​​​​​​
