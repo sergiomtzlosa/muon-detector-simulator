@@ -40,4 +40,4 @@ FOUNDATION_EXPORT NSString *MDSFormatHitList(NSArray<MDSHit *> *hits);
 @end
 
 NS_ASSUME_NONNULL_END
-​​​​​​​​​​​​​​​​​​
+​​​​​​​​​​​​​​​​​​​
