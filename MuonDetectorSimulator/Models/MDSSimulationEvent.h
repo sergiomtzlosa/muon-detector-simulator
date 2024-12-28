@@ -42,4 +42,3 @@ typedef NS_ENUM(NSInteger, MDSSimulationEventKind) {
 @end
 
 NS_ASSUME_NONNULL_END
-​​​​​​​​​​​​​​​​​​​​​
