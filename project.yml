@@ -105,3 +105,4 @@ schemes:
         - MuonDetectorSimulatorTests
     archive:
       config: Release
+
