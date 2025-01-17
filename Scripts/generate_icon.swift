@@ -266,3 +266,4 @@ for (pixelSize, name) in entries {
 
 print("Wrote \(masterPath) and \(iconsetDirectory)")
 
+
