@@ -110,3 +110,4 @@ NSString *MDSFormatAngle(double degrees) {
 NSString *MDSFormatDistance(double centimetres) {
     return [NSString stringWithFormat:@"%.1f cm", centimetres];
 }
+
