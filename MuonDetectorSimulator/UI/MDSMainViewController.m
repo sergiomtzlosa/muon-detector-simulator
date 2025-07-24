@@ -2048,3 +2048,4 @@ static NSImage *MDSCaptureViewImage(NSView *view) {
 
 
 
+
