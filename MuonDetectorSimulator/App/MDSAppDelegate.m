@@ -634,3 +634,4 @@ static NSImage *MDSDebugCaptureWindowContent(NSWindow *window) {
 
 
 
+
