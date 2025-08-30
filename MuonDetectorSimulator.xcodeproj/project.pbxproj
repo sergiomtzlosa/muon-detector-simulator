@@ -57,7 +57,7 @@
 		569AAE1DCA426EEFAA41E413 /* MDSSimulationEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSSimulationEngine.m; sourceTree = "<group>"; };
 		59E4063B53CABB1BFA608DB2 /* MDSLogEntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSLogEntry.m; sourceTree = "<group>"; };
 		671B62C9B6BD9E3BD4919AB7 /* MDSRandomTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSRandomTests.m; sourceTree = "<group>"; };
-		67DA10412F1FBEC000C7AF29 /* MuonDetectorSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuonDetectorSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67DA10412F1FBEC000C7AF29 /* Muon Detector Simulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Muon Detector Simulator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68C848BF833AFCC087F6B1F3 /* MDSTimelineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSTimelineView.m; sourceTree = "<group>"; };
 		77C6CFFE40EA41C29308B2CB /* MDSDetectorSceneController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSDetectorSceneController.m; sourceTree = "<group>"; };
 		7CBE1B38C17483B9E818BACF /* MDSGeometry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSGeometry.m; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 		4B7F274F15298696E1F83C10 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				67DA10412F1FBEC000C7AF29 /* MuonDetectorSimulator.app */,
+				67DA10412F1FBEC000C7AF29 /* Muon Detector Simulator.app */,
 				E651D4B911D27642080F33C1 /* MuonDetectorSimulatorTests.xctest */,
 			);
 			name = Products;
@@ -263,7 +263,7 @@
 			packageProductDependencies = (
 			);
 			productName = MuonDetectorSimulator;
-			productReference = 67DA10412F1FBEC000C7AF29 /* MuonDetectorSimulator.app */;
+			productReference = 67DA10412F1FBEC000C7AF29 /* Muon Detector Simulator.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F6A6DC3479257F791A65CCD8 /* MuonDetectorSimulatorTests */ = {
@@ -291,9 +291,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 2700;
-				TargetAttributes = {
-				};
+				LastUpgradeCheck = 2710;
 			};
 			buildConfigurationList = CBFE5646E342E81A31AD9DC1 /* Build configuration list for PBXProject "MuonDetectorSimulator" */;
 			developmentRegion = en;
@@ -418,10 +416,12 @@
 				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -446,6 +446,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -460,6 +461,7 @@
 				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/MuonDetectorSimulator/Models",
@@ -480,15 +482,15 @@
 		A77BBCF46DC991117905F8CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				INFOPLIST_FILE = MuonDetectorSimulator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.MuonDetectorSimulator;
 				PRODUCT_NAME = "Muon Detector Simulator";
@@ -533,10 +535,12 @@
 				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -554,6 +558,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
@@ -563,15 +568,15 @@
 		F12827E206F76B5728326D75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				INFOPLIST_FILE = MuonDetectorSimulator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.MuonDetectorSimulator;
 				PRODUCT_NAME = "Muon Detector Simulator";
@@ -587,6 +592,7 @@
 				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/MuonDetectorSimulator/Models",
