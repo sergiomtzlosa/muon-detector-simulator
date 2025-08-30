@@ -4,6 +4,8 @@ A native macOS educational simulation of a three-tube cosmic-ray muon telescope.
 It is written in Objective-C with AppKit and SceneKit and has no third-party
 runtime dependencies or network features.
 
+![Muon Detector Simulator](preview.png)
+
 > **Simulation only.** This app does not measure radiation, connect to detector
 > hardware, or produce calibrated scientific results. Every rate, count, track,
 > and spark comes from a model with adjustable assumptions.
