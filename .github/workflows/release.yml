@@ -11,7 +11,7 @@ permissions:
 env:
   PROJECT_NAME: MuonDetectorSimulator.xcodeproj
   SCHEME: MuonDetectorSimulator
-  APP_NAME: MuonDetectorSimulator
+  APP_NAME: Muon Detector Simulator
   CONFIGURATION: Release
 
 jobs:
@@ -32,6 +32,7 @@ jobs:
             -project "$PROJECT_NAME" \
             -scheme "$SCHEME" \
             -configuration "$CONFIGURATION" \
+            -destination 'generic/platform=macOS' \
             -derivedDataPath build/DerivedDataRelease \
             build \
             CODE_SIGN_IDENTITY="-" \
@@ -40,8 +41,18 @@ jobs:
 
       - name: Package app binary and source archive
         run: |
-          APP_PATH="build/DerivedDataRelease/Build/Products/$CONFIGURATION/$APP_NAME.app"
-          test -d "$APP_PATH"
+          PRODUCTS_DIR="build/DerivedDataRelease/Build/Products/$CONFIGURATION"
+
+          # The app bundle is named by PRODUCT_NAME in project.yml
+          # ("Muon Detector Simulator"), not by the scheme name, so resolve
+          # it from the products directory instead of hardcoding it.
+          APP_PATH="$(find "$PRODUCTS_DIR" -maxdepth 1 -name '*.app' -type d | head -n 1)"
+          if [ -z "$APP_PATH" ]; then
+            echo "::error::No .app bundle found in $PRODUCTS_DIR"
+            exit 1
+          fi
+          echo "Packaging $APP_PATH"
+
           VERSION="${GITHUB_REF_NAME#v}"
 
           # 1. Zip the compiled .app bundle
